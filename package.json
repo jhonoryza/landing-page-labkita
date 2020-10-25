@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "labkita-landing-page",
+  "description": "website app labkita landing page",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
