@@ -1,5 +1,3 @@
-# Lokuri Website
+# Landing Page labkita.my.id Website
 
-> Fake cloud hosting website used in this [YouTube tutorial](https://www.youtube.com/watch?v=p0bGHP-PXD4)
-
-> Fake cloud hosting website [Live Preview](https://zen-carson-c10c9f.netlify.app)
+- for my personal labkita landing page [Labkita](https://www.labkita.my.id)
