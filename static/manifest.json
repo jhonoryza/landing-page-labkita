@@ -1,20 +1,32 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "Labkita",
-	"short_name": "Labkita",
-	"display": "minimal-ui",
+	"theme_color": "#002240",
+	"background_color": "#002240",
+	"display": "fullscreen",
+	"scope": "/",
 	"start_url": "/",
+	"app_name": "Labkita",
+	"short_name": "Labkita",
+	"description": "Jasa pembuatan aplikasi website & mobile",
 	"icons": [
 		{
-			"src": "asset/img/logo.jpg",
+			"src": "asset/img/icons/icon-192x192.png",
 			"sizes": "192x192",
-			"type": "image/jpg"
+			"type": "image/png"
 		},
 		{
-			"src": "asset/img/logo.jpg",
+			"src": "asset/img/icons/icon-256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "asset/img/icons/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "asset/img/icons/icon-512x512.png",
 			"sizes": "512x512",
-			"type": "image/jpg"
+			"type": "image/png"
 		}
 	]
 }
