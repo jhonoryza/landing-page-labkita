@@ -12,7 +12,7 @@
 	<meta property="og:title" content="Labkita | Produk">
 	<meta property="og:site_name" content="Produk">
 	<meta property="og:description" content="Jasa pembuatan aplikasi website & mobile | Produk">
-	<meta property="og:image" content="https://www.labkita.my.id/asset/img/meta.png">
+	<meta property="og:image:secure_url" itemprop="image" content="https://www.labkita.my.id/asset/img/meta.png">
 	<meta property="og:type" content="website">
 	<!-- <meta property="fb:app_id" content=""> -->
 	
