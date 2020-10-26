@@ -12,7 +12,7 @@
 	<meta property="og:title" content="Labkita | Produk">
 	<meta property="og:site_name" content="Produk">
 	<meta property="og:description" content="Jasa pembuatan aplikasi website & mobile | Produk">
-	<meta property="og:image" content="url(asset/img/logo.png)">
+	<meta property="og:image" content="https://www.labkita.my.id/static/asset/img/logo.png">
 	<meta property="og:type" content="website">
 	<!-- <meta property="fb:app_id" content=""> -->
 	
@@ -20,7 +20,7 @@
 	<meta name="twitter:site" content="/produk">
 	<meta name="twitter:description" content="Jasa pembuatan aplikasi website & mobile">
 	<meta name="twitter:title" content="Labkita | Produk">
-	<meta name="twitter:image" content="url(asset/img/logo.png)">
+	<meta name="twitter:image" content="https://www.labkita.my.id/static/asset/img/logo.png">
 
     <title>Labkita</title>
 </svelte:head>
