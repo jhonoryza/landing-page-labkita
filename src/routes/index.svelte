@@ -3,21 +3,10 @@
 </script>
 
 <style>
-	h1,
-	figure,
-	p {
+	.kid {
 		text-align: center;
 		margin: 0 auto;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	.kid img {
-		width: 100%;
 		max-width: 400px;
-		margin: 0 0 1em 0;
 	}
 
 	@media (min-width: 480px) {
@@ -31,6 +20,61 @@
 	<title>Labkita</title>
 </svelte:head>
 
+<!-- Showcase -->
+<section class="showcase">
+	<div class="container grid">
+		<div class="showcase-text">
+			<h1>Jasa pembuatan aplikasi</h1>
+			<p>
+				Mobile Android, API, Situs Web statis/dinamis untuk individu,
+				lembaga atau perusahaan.
+			</p>
+			<a href="features.html" class="btn btn-outline">Lebih Lanjut</a>
+		</div>
+
+		<div class="showcase-form card">
+			<h2>Hubungi Kami</h2>
+			<form
+				name="contact"
+				netlify-honeypot="bot-field"
+				method="POST"
+				data-netlify="true">
+				<input type="hidden" name="form-name" value="contact" />
+				<p class="hidden">
+					<label>Don’t fill this out if you're human:
+						<input name="bot-field" /></label>
+				</p>
+				<div class="form-control">
+					<input
+						type="text"
+						name="name"
+						placeholder="Nama"
+						required />
+				</div>
+				<div class="form-control">
+					<input
+						type="email"
+						name="email"
+						placeholder="Email"
+						required />
+				</div>
+				<div class="form-control">
+					<input
+						type="text"
+						name="message"
+						placeholder="Pesan"
+						required />
+				</div>
+				<div class="form-control">
+					<div
+						class="g-recaptcha"
+						data-sitekey="6LdSbdsZAAAAAIs_O4j-WQn7sqQOqvTU8lW8r6Bi" />
+				</div>
+				<input type="submit" value="Kirim" class="btn btn-primary" />
+			</form>
+		</div>
+	</div>
+</section>
 <!-- Stats -->
 <section class="stats">
 	<div class="container">
@@ -63,10 +107,10 @@
 <!-- <section class="cli">
 	<div class="container grid">
 		<img src="asset/img/cli.png" alt="" /> -->
-		<!-- <div class="card">
+<!-- <div class="card">
 			<h3>Easy to use, cross platform CLI</h3>
 		</div> -->
-		<!-- <div class="card">
+<!-- <div class="card">
 			<h3>Deploy in seconds</h3>
 		</div>
 	</div>
@@ -139,10 +183,10 @@
 	</div>
 </section>
 
-<h1>Great!</h1>
-<figure>
-	<div class="kid">
+<div class="kid">
+	<h1>Great!</h1>
+	<figure>
 		<img alt="Success Kid" src={successkid} />
-	</div>
-	<figcaption>Lets go!</figcaption>
-</figure>
+		<figcaption>Lets go!</figcaption>
+	</figure>
+</div>

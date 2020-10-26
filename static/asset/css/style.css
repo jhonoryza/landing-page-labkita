@@ -111,8 +111,8 @@ pre {
 
 .showcase-form {
   position: relative;
-  top: 60px;
-  height: 350px;
+  top: 10px;
+  height: 450px;
   width: 400px;
   padding: 40px;
   z-index: 100;
@@ -124,8 +124,7 @@ pre {
   margin: 30px 0;
 }
 
-.showcase-form input[type='text'],
-.showcase-form input[type='email'] {
+.showcase-form input {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;

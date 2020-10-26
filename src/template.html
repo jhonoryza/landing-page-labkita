@@ -9,6 +9,7 @@
 		crossorigin="anonymous" />
 	<link rel="stylesheet" href="asset/css/utilities.css">
 	<link rel="stylesheet" href="asset/css/style.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- <meta name="theme-color" content="#333333"> -->
 
 	%sapper.base%
@@ -45,55 +46,14 @@
 			<nav>
 				<ul>
 					<li><a href="/">Home</a></li>
-					<li><a target="__blank" href="https://blog.labkita.my.id">Blog</a></li>
+					<li><a href="#">Produk</a></li>
 					<li><a href="#">Portofolio</a></li>
+					<li><a target="__blank" href="https://blog.labkita.my.id">Blog</a></li>
 					<li><a href="#">Docs</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-
-	<!-- Showcase -->
-	<section class="showcase">
-		<div class="container grid">
-			<div class="showcase-text">
-				<h1>Pengembangan aplikasi</h1>
-				<ol>
-					<li>
-						<p>Aplikasi website untuk pembuatan API, situs web
-							statis/dinamis untuk individu, lembaga atau perusahaan.</p>
-					</li>
-					<li>
-						<p>Aplikasi mobile android.</p>
-					</li>
-				</ol>
-				<p>
-					Isi formulir untuk mencoba demo platform kami</p>
-				<a href="features.html" class="btn btn-outline">Lebih Lanjut</a>
-			</div>
-
-			<div class="showcase-form card">
-				<h2>Hubungi Kami</h2>
-				<form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
-					<input type="hidden" name="form-name" value="contact">
-					<p class="hidden">
-						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-					</p>
-					<div class="form-control">
-						<input type="text" name="name" placeholder="Nama" required>
-					</div>
-					<div class="form-control">
-						<input type="email" name="email" placeholder="Email" required>
-					</div>
-					<div class="form-control">
-						<input type="text" name="message" placeholder="Pesan" required>
-					</div>
-					<input type="submit" value="Kirim" class="btn btn-primary">
-				</form>
-			</div>
-		</div>
-	</section>
-
 
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
