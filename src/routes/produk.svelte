@@ -3,6 +3,25 @@
 </script>
 
 <svelte:head>
+    <meta name="title" content="Labkita | Produk">
+	<meta name="description" content="Jasa pembuatan aplikasi website & mobile | Produk">
+	<meta name="keywords" content="jasa pembuatan website,jasa pembuatan aplikasi android,mobile">
+	<meta name="theme-color" content="#002240">
+	
+	<meta property="og:url" content="/produk">
+	<meta property="og:title" content="Labkita | Produk">
+	<meta property="og:site_name" content="Produk">
+	<meta property="og:description" content="Jasa pembuatan aplikasi website & mobile | Produk">
+	<meta property="og:image" content="asset/img/logo.png">
+	<meta property="og:type" content="website">
+	<!-- <meta property="fb:app_id" content=""> -->
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="/produk">
+	<meta name="twitter:description" content="Jasa pembuatan aplikasi website & mobile">
+	<meta name="twitter:title" content="Labkita | Produk">
+	<meta name="twitter:image" content="asset/img/logo.png">
+
     <title>Labkita</title>
 </svelte:head>
 

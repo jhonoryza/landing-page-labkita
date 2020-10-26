@@ -18,6 +18,25 @@
 </style>
 
 <svelte:head>
+	<meta name="title" content="Labkita">
+	<meta name="description" content="Jasa pembuatan aplikasi website & mobile">
+	<meta name="keywords" content="jasa pembuatan website,jasa pembuatan aplikasi android,mobile">
+	<meta name="theme-color" content="#002240">
+	
+	<meta property="og:url" content="/">
+	<meta property="og:title" content="Labkita">
+	<meta property="og:site_name" content="Home">
+	<meta property="og:description" content="Jasa pembuatan aplikasi website & mobile">
+	<meta property="og:image" content="asset/img/logo.png">
+	<meta property="og:type" content="website">
+	<!-- <meta property="fb:app_id" content=""> -->
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="/">
+	<meta name="twitter:description" content="Jasa pembuatan aplikasi website & mobile">
+	<meta name="twitter:title" content="Labkita">
+	<meta name="twitter:image" content="asset/img/logo.png">
+
 	<title>Labkita</title>
 </svelte:head>
 
