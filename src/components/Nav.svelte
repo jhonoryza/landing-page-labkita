@@ -6,7 +6,7 @@
 <div class="navbar">
 	<div class="container flex">
 		<div class="logo-icon">
-			<h1><img alt="labkita" src="asset/img/logo.jpg" /> Labkita</h1>
+			<h1><img alt="labkita" src="asset/img/logos/logo-4.png" /> Labkita</h1>
 		</div>
 		<nav>
 			<ul>
