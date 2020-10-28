@@ -95,7 +95,7 @@
 	<meta name="twitter:title" content="Labkita" />
 	<meta
 		name="twitter:image"
-		content="https://www.labkita.my.id/asset/img/logos/logo-4.png" />
+		content="https://www.labkita.my.id/asset/img/meta.png" />
 
 	<title>Labkita</title>
 </svelte:head>
