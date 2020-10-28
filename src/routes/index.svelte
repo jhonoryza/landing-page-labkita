@@ -30,7 +30,7 @@
 					} else {
 						res.json().then((data) => {
 							error = true;
-							mailStatus = data.message;
+							mailStatus = data.error;
 							sending = false;
 							name = "";
 							email = "";
