@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+require('dotenv').config()
 
 export async function post(req, res, next) {
     const { name, email, message } = req.body
@@ -8,8 +9,8 @@ export async function post(req, res, next) {
         port: 2525,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: "jardik007", // generated ethereal user
-            pass: "united007", // generated ethereal password
+            user: process.env.MAILUSER, // generated ethereal user
+            pass: process.env.MAILPASS, // generated ethereal password
         },
     });
 
