@@ -20,7 +20,7 @@
 	<meta name="twitter:site" content="/produk">
 	<meta name="twitter:description" content="Jasa pembuatan aplikasi website & mobile">
 	<meta name="twitter:title" content="Labkita | Produk">
-	<meta name="twitter:image" content="https://www.labkita.my.id/asset/img/logos/logo-4.png">
+	<meta name="twitter:image" content="https://www.labkita.my.id/asset/img/meta.png">
 
     <title>Labkita</title>
 </svelte:head>
