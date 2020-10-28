@@ -377,3 +377,28 @@ pre {
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
+
+.mailsuccess {
+  background-color: #5cb85c;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.mailerror {
+  background-color: #d9534f;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.spinner {
+  text-align: center;
+  justify-self: center;
+}

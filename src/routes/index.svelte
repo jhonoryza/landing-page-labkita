@@ -1,6 +1,53 @@
 <script>
 	import { fade } from "svelte/transition";
 	import successkid from "images/successkid.jpg";
+	import { Circle2 } from "svelte-loading-spinners";
+
+	let name;
+	let email;
+	let message;
+	let mailStatus;
+	let sending = false;
+	let error = false;
+
+	const sendMail = async () => {
+		if (email && name && message) {
+			sending = true;
+			await fetch("mail.json", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ name, email, message }),
+			})
+				.then((res) => {
+					if (res.status === 200) {
+						res.json().then((data) => {
+							mailStatus = data.message;
+							sending = false;
+							name = "";
+							email = "";
+							message = "";
+						});
+					} else {
+						res.json().then((data) => {
+							error = true;
+							mailStatus = data.message;
+							sending = false;
+							name = "";
+							email = "";
+							message = "";
+						});
+					}
+				})
+				.catch((err) => {
+					error = true;
+					mailStatus = err;
+					sending = false;
+					name = "";
+					email = "";
+					message = "";
+				});
+		}
+	};
 </script>
 
 <style>
@@ -33,7 +80,10 @@
 	<meta
 		property="og:description"
 		content="Jasa pembuatan aplikasi website & mobile" />
-	<meta property="og:image:secure_url" itemprop="image" content="https://www.labkita.my.id/asset/img/meta.png">
+	<meta
+		property="og:image:secure_url"
+		itemprop="image"
+		content="https://www.labkita.my.id/asset/img/meta.png" />
 	<meta property="og:type" content="website" />
 	<!-- <meta property="fb:app_id" content=""> -->
 
@@ -43,14 +93,14 @@
 		name="twitter:description"
 		content="Jasa pembuatan aplikasi website & mobile" />
 	<meta name="twitter:title" content="Labkita" />
-	<meta name="twitter:image" content="https://www.labkita.my.id/asset/img/meta.png" />
+	<meta
+		name="twitter:image"
+		content="https://www.labkita.my.id/asset/img/meta.png" />
 
 	<title>Labkita</title>
 </svelte:head>
 
-<div
-    transition:fade
-	class="homepage">
+<div transition:fade class="homepage">
 	<!-- Showcase -->
 	<section class="showcase">
 		<div class="container grid">
@@ -64,8 +114,23 @@
 			</div>
 
 			<div class="showcase-form card">
+				<div>
+					{#if mailStatus !== undefined}
+						<div
+							class:mailsuccess={error == false}
+							class:mailerror={error == true}>
+							{mailStatus === undefined ? '' : mailStatus}
+						</div>
+					{/if}
+					{#if sending}
+						<div class="spinner">
+							<Circle2 size="60" unit="px" />
+						</div>
+					{/if}
+				</div>
 				<h2>Hubungi Kami</h2>
 				<form
+					on:submit|preventDefault={sendMail}
 					name="contact"
 					netlify-honeypot="bot-field"
 					method="POST"
@@ -77,6 +142,7 @@
 					</p>
 					<div class="form-control">
 						<input
+							bind:value={name}
 							type="text"
 							name="name"
 							placeholder="Nama"
@@ -84,6 +150,7 @@
 					</div>
 					<div class="form-control">
 						<input
+							bind:value={email}
 							type="email"
 							name="email"
 							placeholder="Email"
@@ -91,6 +158,7 @@
 					</div>
 					<div class="form-control">
 						<input
+							bind:value={message}
 							type="text"
 							name="message"
 							placeholder="Pesan"
