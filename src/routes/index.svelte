@@ -83,7 +83,7 @@
 	<meta
 		property="og:image:secure_url"
 		itemprop="image"
-		content="https://www.labkita.my.id/asset/img/meta.png" />
+		content="https://www.labkita.my.id/asset/img/logos/logo-4.png" />
 	<meta property="og:type" content="website" />
 	<!-- <meta property="fb:app_id" content=""> -->
 
@@ -95,7 +95,7 @@
 	<meta name="twitter:title" content="Labkita" />
 	<meta
 		name="twitter:image"
-		content="https://www.labkita.my.id/asset/img/meta.png" />
+		content="https://www.labkita.my.id/asset/img/logos/logo-4.png" />
 
 	<title>Labkita</title>
 </svelte:head>
