@@ -32,5 +32,5 @@
     "sapper": "^0.28.0",
     "svelte": "^3.17.3",
     "svelte-loading-spinners": "^0.1.1"
-  },
+  }
 }
