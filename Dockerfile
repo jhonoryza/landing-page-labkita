@@ -16,8 +16,6 @@ WORKDIR /app
 COPY --from=0 /app .
 COPY . .
 
-RUN npm run build
-
-CMD ["npm", "start"]
+CMD ["npm", "build"]
 
 EXPOSE 3000
