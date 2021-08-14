@@ -1,5 +1,5 @@
 # build the sapper app
-FROM node:14.17.5-alpine
+FROM node:14.17.5-slim
 
 ENV HOST=0.0.0.0 
 ENV PORT=3000 
