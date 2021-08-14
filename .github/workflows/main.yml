@@ -13,12 +13,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-        
-      - name: Sapper Build
-        uses: truewebartisans/actions-sapper@master
-        with:
-          build_mode: "export"
-#           args: "--legacy --entry about"
 
       - name: Dockerhub login
         env:
