@@ -1,53 +1,6 @@
 <script>
 	import { fade } from "svelte/transition";
 	import successkid from "images/successkid.jpg";
-	import { Circle2 } from "svelte-loading-spinners";
-
-	let name;
-	let email;
-	let message;
-	let mailStatus;
-	let sending = false;
-	let error = false;
-
-	const sendMail = async () => {
-		if (email && name && message) {
-			sending = true;
-			await fetch("mail.json", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ name, email, message }),
-			})
-				.then((res) => {
-					if (res.status === 200) {
-						res.json().then((data) => {
-							mailStatus = data.message;
-							sending = false;
-							name = "";
-							email = "";
-							message = "";
-						});
-					} else {
-						res.json().then((data) => {
-							error = true;
-							mailStatus = data.error;
-							sending = false;
-							name = "";
-							email = "";
-							message = "";
-						});
-					}
-				})
-				.catch((err) => {
-					error = true;
-					mailStatus = err;
-					sending = false;
-					name = "";
-					email = "";
-					message = "";
-				});
-		}
-	};
 </script>
 
 <style>
@@ -110,70 +63,13 @@
 					Mobile Android, API, Situs Web statis/dinamis untuk
 					individu, lembaga atau perusahaan.
 				</p>
-				<a href="features.html" class="btn btn-outline">Lebih Lanjut</a>
+				<a href="produk" class="btn btn-outline">Lebih Lanjut</a>
 			</div>
 
 			<div class="showcase-form card">
 				<div>
-					{#if mailStatus !== undefined}
-						<div
-							class:mailsuccess={error == false}
-							class:mailerror={error == true}>
-							{mailStatus === undefined ? '' : mailStatus}
-						</div>
-					{/if}
-					{#if sending}
-						<div class="spinner">
-							<Circle2 size="60" unit="px" />
-						</div>
-					{/if}
+					
 				</div>
-				<h2>Hubungi Kami</h2>
-				<form
-					on:submit|preventDefault={sendMail}
-					name="contact"
-					netlify-honeypot="bot-field"
-					method="POST"
-					data-netlify="true">
-					<input type="hidden" name="form-name" value="contact" />
-					<p class="hidden">
-						<label>Don’t fill this out if you're human:
-							<input name="bot-field" /></label>
-					</p>
-					<div class="form-control">
-						<input
-							bind:value={name}
-							type="text"
-							name="name"
-							placeholder="Nama"
-							required />
-					</div>
-					<div class="form-control">
-						<input
-							bind:value={email}
-							type="email"
-							name="email"
-							placeholder="Email"
-							required />
-					</div>
-					<div class="form-control">
-						<input
-							bind:value={message}
-							type="text"
-							name="message"
-							placeholder="Pesan"
-							required />
-					</div>
-					<div class="form-control">
-						<div
-							class="g-recaptcha"
-							data-sitekey="6LdSbdsZAAAAAIs_O4j-WQn7sqQOqvTU8lW8r6Bi" />
-					</div>
-					<input
-						type="submit"
-						value="Kirim"
-						class="btn btn-primary" />
-				</form>
 			</div>
 		</div>
 	</section>
@@ -204,19 +100,6 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- Cli -->
-	<!-- <section class="cli">
-	<div class="container grid">
-		<img src="asset/img/cli.png" alt="" /> -->
-	<!-- <div class="card">
-			<h3>Easy to use, cross platform CLI</h3>
-		</div> -->
-	<!-- <div class="card">
-			<h3>Deploy in seconds</h3>
-		</div>
-	</div>
-</section> -->
 
 	<!-- Languages -->
 	<section class="languages">
