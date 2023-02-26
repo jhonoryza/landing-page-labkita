@@ -58,18 +58,11 @@
 	<section class="showcase">
 		<div class="container grid">
 			<div class="showcase-text">
-				<h1>Jasa pembuatan aplikasi</h1>
+				<h1>Selamat datang ..</h1>
 				<p>
-					Mobile Android, API, Situs Web statis/dinamis untuk
-					individu, lembaga atau perusahaan.
+					Mail: jardik.oryza@gmail.com
 				</p>
 				<a href="produk" class="btn btn-outline">Lebih Lanjut</a>
-			</div>
-
-			<div class="showcase-form card">
-				<div>
-					
-				</div>
 			</div>
 		</div>
 	</section>
@@ -77,8 +70,7 @@
 	<section class="stats">
 		<div class="container">
 			<h3 class="stats-heading text-center my-1">
-				Selamat datang di platform terbaik untuk membangun aplikasi dari
-				semua jenis dengan arsitektur dan penskalaan modern
+				Selamat datang di platform terbaik untuk membangun aplikasi.
 			</h3>
 
 			<div class="grid grid-3 text-center my-4">
