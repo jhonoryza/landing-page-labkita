@@ -24,7 +24,7 @@
 				<li>
 					<a
 						target="__blank"
-						href="https://blog.labkita.my.id">Blog</a>
+						href="https://notes.labkita.my.id">Blog</a>
 				</li>
 				<!-- <li><a href="#">Docs</a></li> -->
 			</ul>
